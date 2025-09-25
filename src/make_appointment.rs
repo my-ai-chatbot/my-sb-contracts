@@ -11,13 +11,15 @@ pub struct MakeAppointmentSbContract {
     #[prost(string, tag = "3")]
     pub session_id: String,
     #[prost(string, tag = "4")]
-    pub phone: String,
+    pub event_id: String,
     #[prost(string, tag = "5")]
-    pub email: String,
+    pub phone: String,
     #[prost(string, tag = "6")]
-    pub date: String,
+    pub email: String,
     #[prost(string, tag = "7")]
-    pub time: String,
+    pub date: String,
     #[prost(string, tag = "8")]
+    pub time: String,
+    #[prost(string, tag = "9")]
     pub time_zone: String,
 }
