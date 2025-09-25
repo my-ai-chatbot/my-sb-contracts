@@ -9,7 +9,9 @@ pub struct SendSmsMySbContract {
     #[prost(string, tag = "2")]
     pub tenant_id: String,
     #[prost(string, tag = "3")]
-    pub phone: String,
+    pub session_id: String,
     #[prost(string, tag = "4")]
+    pub phone: String,
+    #[prost(string, tag = "5")]
     pub message: String,
 }
