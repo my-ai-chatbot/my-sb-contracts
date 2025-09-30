@@ -22,4 +22,6 @@ pub struct MakeAppointmentSbContract {
     pub time: String,
     #[prost(string, tag = "9")]
     pub time_zone: String,
+    #[prost(string, tag = "10")]
+    pub language: String,
 }
