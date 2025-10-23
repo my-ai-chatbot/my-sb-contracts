@@ -13,10 +13,12 @@ pub struct ChatMessageSbContract {
     #[prost(string, tag = "4")]
     pub chat_id: String,
     #[prost(bool, tag = "5")]
+    pub audio: bool,
+    #[prost(bool, tag = "6")]
     pub client_to_server: bool,
-    #[prost(string, tag = "6")]
+    #[prost(string, tag = "7")]
     pub message: String,
-    #[prost(message, tag = "7")]
+    #[prost(message, tag = "8")]
     pub tool_call: Option<ToolCallSbContract>,
 }
 
