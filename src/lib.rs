@@ -4,3 +4,5 @@ mod make_appointment;
 pub use make_appointment::*;
 mod chat_message;
 pub use chat_message::*;
+mod stt_transcribing;
+pub use stt_transcribing::*;
