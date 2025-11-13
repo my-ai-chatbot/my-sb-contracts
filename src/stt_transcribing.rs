@@ -10,4 +10,6 @@ pub struct SttTranscribing {
     pub text: String,
     #[prost(string, tag = "3")]
     pub lang_id: String,
+    #[prost(string, tag = "4")]
+    pub stt_type: String,
 }
