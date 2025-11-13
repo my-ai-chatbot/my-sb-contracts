@@ -14,4 +14,6 @@ pub struct SttTranscribedText {
     pub stt_type: String,
     #[prost(string, tag = "5")]
     pub file: String,
+    #[prost(string, tag = "6")]
+    pub request_id: String,
 }
