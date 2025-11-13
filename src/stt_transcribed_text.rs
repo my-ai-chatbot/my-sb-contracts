@@ -3,7 +3,7 @@ use service_sdk::my_service_bus::macros::my_sb_entity_protobuf_model;
 
 #[derive(Clone, PartialEq, ::prost::Message)]
 #[my_sb_entity_protobuf_model(topic_id = "stt-transcribed-text")]
-pub struct SttTranscribing {
+pub struct SttTranscribedText {
     #[prost(string, tag = "1")]
     pub session_id: String,
     #[prost(string, tag = "2")]
