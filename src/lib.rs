@@ -6,3 +6,5 @@ mod chat_message;
 pub use chat_message::*;
 mod stt_transcribed_text;
 pub use stt_transcribed_text::*;
+mod stt_start_conversation;
+pub use stt_start_conversation::*;
