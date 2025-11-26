@@ -12,4 +12,6 @@ pub struct SttStartConversation {
     pub request_id: String,
     #[prost(string, tag = "4")]
     pub conversation_id: String,
+    #[prost(string, tag = "5")]
+    pub file_storage_name: String,
 }
