@@ -10,4 +10,6 @@ pub struct SttEndConversationMySbContract {
     pub request_id: String,
     #[prost(string, tag = "3")]
     pub conversation_id: String,
+    #[prost(bool, tag = "4")]
+    pub voice: bool,
 }
