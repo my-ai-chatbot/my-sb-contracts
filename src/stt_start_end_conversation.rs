@@ -2,7 +2,7 @@ use service_sdk::my_service_bus;
 use service_sdk::my_service_bus::macros::my_sb_entity_protobuf_model;
 
 #[derive(Clone, PartialEq, ::prost::Message)]
-#[my_sb_entity_protobuf_model(topic_id = "stt-start-conversation")]
+#[my_sb_entity_protobuf_model(topic_id = "stt-start-end-conversation")]
 pub struct SttStartConversationMySbContract {
     #[prost(string, tag = "1")]
     pub session_id: String,
@@ -14,4 +14,6 @@ pub struct SttStartConversationMySbContract {
     pub conversation_id: String,
     #[prost(string, tag = "5")]
     pub file_storage_name: String,
+    #[prost(bool, tag = "6")]
+    pub start: bool,
 }
