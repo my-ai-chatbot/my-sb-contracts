@@ -2,8 +2,8 @@ use service_sdk::my_service_bus;
 use service_sdk::my_service_bus::macros::my_sb_entity_protobuf_model;
 
 #[derive(Clone, PartialEq, ::prost::Message)]
-#[my_sb_entity_protobuf_model(topic_id = "stt-end-conversation")]
-pub struct SessionConnectDisconnect {
+#[my_sb_entity_protobuf_model(topic_id = "session-connect-disconnect")]
+pub struct SessionConnectDisconnectMySbContract {
     #[prost(string, tag = "1")]
     pub session_id: String,
     #[prost(string, tag = "2")]
