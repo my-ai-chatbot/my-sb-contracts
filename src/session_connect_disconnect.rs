@@ -12,4 +12,6 @@ pub struct SessionConnectDisconnectMySbContract {
     pub country: String,
     #[prost(string, tag = "4")]
     pub origin: String,
+    #[prost(bool, tag = "5")]
+    pub connect: bool,
 }
