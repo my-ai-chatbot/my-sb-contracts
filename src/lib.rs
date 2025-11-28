@@ -12,3 +12,5 @@ mod stt_end_conversation;
 pub use stt_end_conversation::*;
 mod session_connect_disconnect;
 pub use session_connect_disconnect::*;
+mod stt_canceled_conversation;
+pub use stt_canceled_conversation::*;
