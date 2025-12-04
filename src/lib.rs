@@ -14,3 +14,5 @@ mod session_connect_disconnect;
 pub use session_connect_disconnect::*;
 mod stt_canceled_conversation;
 pub use stt_canceled_conversation::*;
+mod reasoning_happened;
+pub use reasoning_happened::*;
