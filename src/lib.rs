@@ -16,3 +16,5 @@ mod stt_canceled_conversation;
 pub use stt_canceled_conversation::*;
 mod reasoning_happened;
 pub use reasoning_happened::*;
+mod execute_tts;
+pub use execute_tts::*;
