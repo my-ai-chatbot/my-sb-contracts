@@ -9,7 +9,7 @@ pub struct SttTranscribedTextMySbContract {
     #[prost(string, tag = "2")]
     pub text: String,
     #[prost(string, tag = "3")]
-    pub lang_id: String,
+    pub chat_lang_id: String,
     #[prost(string, tag = "4")]
     pub stt_type: String,
     #[prost(string, tag = "5")]
@@ -18,4 +18,6 @@ pub struct SttTranscribedTextMySbContract {
     pub request_id: String,
     #[prost(string, tag = "7")]
     pub conversation_id: String,
+    #[prost(string, tag = "8")]
+    pub text_lang_id: String,
 }
