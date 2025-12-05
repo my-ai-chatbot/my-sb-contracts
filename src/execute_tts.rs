@@ -13,9 +13,11 @@ pub struct ExecuteTtsMySbContract {
     #[prost(string, tag = "4")]
     pub tenant_id: String,
     #[prost(string, tag = "5")]
-    pub file_name: String,
+    pub text: String,
     #[prost(string, tag = "6")]
-    pub text_lang_id: String,
+    pub file_name: String,
     #[prost(string, tag = "7")]
+    pub text_lang_id: String,
+    #[prost(string, tag = "8")]
     pub session_lang_id: String,
 }
