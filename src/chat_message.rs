@@ -2,7 +2,7 @@ use service_sdk::my_service_bus;
 use service_sdk::my_service_bus::macros::my_sb_entity_protobuf_model;
 
 #[derive(Clone, PartialEq, ::prost::Message)]
-#[my_sb_entity_protobuf_model(topic_id = "make-appointment")]
+#[my_sb_entity_protobuf_model(topic_id = "chat-message")]
 pub struct ChatMessageSbContract {
     #[prost(string, tag = "1")]
     pub inventory_id: String,
@@ -12,14 +12,10 @@ pub struct ChatMessageSbContract {
     pub session_id: String,
     #[prost(string, tag = "4")]
     pub chat_id: String,
-    #[prost(bool, tag = "5")]
-    pub audio: bool,
-    #[prost(bool, tag = "6")]
-    pub client_to_server: bool,
-    #[prost(string, tag = "7")]
-    pub message: String,
-    #[prost(message, tag = "8")]
-    pub tool_call: Option<ToolCallSbContract>,
+    #[prost(string, tag = "5")]
+    pub request_id: String,
+    #[prost(string, tag = "6")]
+    pub conversation_id: String,
 }
 
 #[derive(Clone, PartialEq, ::prost::Message)]
