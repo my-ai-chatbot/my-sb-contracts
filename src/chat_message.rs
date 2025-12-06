@@ -11,12 +11,10 @@ pub struct ChatMessageSbContract {
     #[prost(string, tag = "3")]
     pub session_id: String,
     #[prost(string, tag = "4")]
-    pub chat_id: String,
-    #[prost(string, tag = "5")]
     pub request_id: String,
-    #[prost(string, tag = "6")]
+    #[prost(string, tag = "5")]
     pub conversation_id: String,
-    #[prost(uint64, tag = "7")]
+    #[prost(uint64, tag = "6")]
     pub total_messages: u64,
 }
 
