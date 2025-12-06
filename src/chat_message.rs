@@ -16,6 +16,8 @@ pub struct ChatMessageSbContract {
     pub request_id: String,
     #[prost(string, tag = "6")]
     pub conversation_id: String,
+    #[prost(uint64, tag = "7")]
+    pub total_messages: u64,
 }
 
 #[derive(Clone, PartialEq, ::prost::Message)]
