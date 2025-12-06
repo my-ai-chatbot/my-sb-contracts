@@ -17,13 +17,3 @@ pub struct ChatMessageSbContract {
     #[prost(uint64, tag = "6")]
     pub total_messages: u64,
 }
-
-#[derive(Clone, PartialEq, ::prost::Message)]
-pub struct ToolCallSbContract {
-    #[prost(string, tag = "1")]
-    pub tool_call: String,
-    #[prost(string, tag = "2")]
-    pub input_data: String,
-    #[prost(string, tag = "3")]
-    pub result: String,
-}
