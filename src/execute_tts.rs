@@ -20,4 +20,6 @@ pub struct ExecuteTtsMySbContract {
     pub text_lang_id: String,
     #[prost(string, tag = "8")]
     pub event_id: String,
+    #[prost(int64, tag = "9")]
+    pub request_telemetry_id: i64,
 }
