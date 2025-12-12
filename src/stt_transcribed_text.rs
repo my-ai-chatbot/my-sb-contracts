@@ -24,4 +24,6 @@ pub struct SttTranscribedTextMySbContract {
     pub silence_micros: i64,
     #[prost(int64, tag = "10")]
     pub stt_duration: i64,
+    #[prost(int64, tag = "11")]
+    pub request_telemetry_id: i64,
 }
