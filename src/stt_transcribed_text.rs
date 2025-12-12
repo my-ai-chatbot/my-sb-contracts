@@ -20,4 +20,8 @@ pub struct SttTranscribedTextMySbContract {
     pub conversation_id: String,
     #[prost(string, tag = "8")]
     pub text_lang_id: String,
+    #[prost(int64, tag = "9")]
+    pub silence_micros: i64,
+    #[prost(int64, tag = "10")]
+    pub stt_duration: i64,
 }
