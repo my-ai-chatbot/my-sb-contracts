@@ -14,4 +14,6 @@ pub struct SttStartConversationMySbContract {
     pub conversation_id: String,
     #[prost(string, tag = "5")]
     pub file_storage_name: String,
+    #[prost(int64, tag = "6")]
+    pub request_telemetry_id: i64,
 }
