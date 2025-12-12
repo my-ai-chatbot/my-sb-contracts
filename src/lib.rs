@@ -18,3 +18,5 @@ mod reasoning_happened;
 pub use reasoning_happened::*;
 mod execute_tts;
 pub use execute_tts::*;
+mod request_telemetry_emitted;
+pub use request_telemetry_emitted::*;
