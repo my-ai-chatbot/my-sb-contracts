@@ -18,4 +18,6 @@ pub struct ExecuteTtsMySbContract {
     pub file_name: String,
     #[prost(string, tag = "7")]
     pub text_lang_id: String,
+    #[prost(string, tag = "8")]
+    pub event_id: String,
 }
